@@ -50,10 +50,10 @@ function App() {
   }, []);
 
   const getOptions = (f) => {
-    if (f.name === "State_Name") return stateOptions;
-    if (f.name === "Crop") return cropOptions;
-    if (f.name === "Season") return seasonOptions;
-    if (f.name === "Crop_Year") return yearOptions;
+    if (f.name === "State_Name") return stateOptions || [];
+    if (f.name === "Crop") return cropOptions || [];
+    if (f.name === "Season") return seasonOptions || [];
+    if (f.name === "Crop_Year") return yearOptions || [];
     return [];
   };
 
